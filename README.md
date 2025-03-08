@@ -46,3 +46,4 @@ Add your custom dataset/pdfs to the `data` directory to chat with Llama3 about t
 ![email](https://github.com/divine-architect/focus./blob/main/imgs/email.png)
 ![todo](https://github.com/divine-architect/focus./blob/main/imgs/todo.png)
 <hr>
+# Focus
