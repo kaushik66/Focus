@@ -1,0 +1,1373 @@
+See discussions, stats, and author profiles for this publication at: https://www.researchgate.net/publication/275220612
+Combined Effect of Variable Viscosity and Variable Thermal Conductivity on
+Double-Diffusive Convection Flow of a Permeable Fluid in a Vertical Channel
+Article  in  Transport in Porous Media · July 2015
+DOI: 10.1007/s11242-015-0494-9
+CITATIONS
+21
+READS
+172
+1 author:
+J. C. Umavathi
+Gulbarga University
+265 PUBLICATIONS   4,348 CITATIONS   
+SEE PROFILE
+All content following this page was uploaded by J. C. Umavathi on 26 March 2020.
+The user has requested enhancement of the downloaded file.
+Transp Porous Med (2015) 108:659–678
+DOI 10.1007/s11242-015-0494-9
+Combined Effect of Variable Viscosity and Variable
+Thermal Conductivity on Double-Diffusive Convection
+Flow of a Permeable Fluid in a Vertical Channel
+J. C. Umavathi1
+Received: 5 December 2014 / Accepted: 27 March 2015 / Published online: 8 April 2015
+© Springer Science+Business Media Dordrecht 2015
+Abstract This paper reports a detailed analytical and numerical investigation on free con-
+vection ﬂow of viscous ﬂuid through a porous medium due to the combined effects of thermal
+and mass diffusion. Effect of temperature-dependent viscosity and thermal conductivity is
+investigated in the presence of ﬁrst-order chemical reaction. The non-Darcy model is applied
+to deﬁne the porous matrix. The effects of viscous and Darcy dissipations are taken into
+account. The governing equations of continuity, momentum, energy, and concentration which
+are coupled nonlinear ordinary differential equations are solved analytically using regular
+perturbation method and numerically using Runge–Kutta shooting method. Brinkman num-
+ber and variable thermal conductivity parameters are used as perturbation parameters. The
+velocity, temperature, and concentration distributions are discussed numerically and plot-
+ted in graphs. The effects of variable viscosity parameter, variable thermal conductivity
+parameter, thermal Grashof number, mass Grashof number, Brinkman number, wall temper-
+ature ratio, and ﬁrst-order chemical reaction parameter on the ﬂow ﬁelds are explored. The
+effects of physical parameters such as skin friction and Nusselt number at both the plates
+are derived and discussed, and the numerical values for various values of physical parame-
+ters are presented in tables. The solutions obtained using Runge–Kutta shooting method and
+using perturbation method are compared and the solutions agree very well in the absence of
+perturbation parameter.
+Keywords
+Free convection · Variable viscosity · Variable thermal conductivity ·
+Viscous dissipation
+B J. C. Umavathi
+drumavathi@rediffmail.com
+1
+Department of Mathematics, Gulbarga University, Gulbarga, Karnataka, India
+123
+660
+J. C. Umavathi
+List of symbols
+Roman symbols
+a, b1
+Empirical constant
+b
+Width of the channel
+bv
+Viscosity variation parameter
+Br
+Brinkman number
+Cw
+Species concentration along the wall
+C0
+Species concentration away from the wall
+C
+Species concentration of the ﬂuid
+C
+Différence in concentration
+D
+Effective diffusion coefﬁcient
+GRT
+Modiﬁed thermal Grashof number
+GrT
+Grashof number
+GRC
+Modiﬁed local mass Grashof number
+GrC
+Local mass Grashof number
+Re
+Reynolds number
+g
+Acceleration due to gravity
+K
+Thermal conductivity of the ﬂuid
+m
+Wall temperature ratio
+T0
+Reference Temperature
+T
+Fluid Temperature
+U
+Velocity
+u
+Dimensionless velocity
+¯u
+Mean velocity
+Y
+Coordinate axis
+y
+Dimensionless coordinate axis
+T
+Difference in temperature
+Greek symbols
+α
+Thermal diffusivity
+βT
+Coefﬁcient of thermal expansion
+βC
+Concentration expansion coefﬁcient
+γ
+Chemical reaction parameter
+θ
+Dimensionless temperature
+κ
+Permeability parameter
+μ
+Viscosity
+μ0
+Viscosity at temperature T0
+υ
+Kinematics viscosity
+ρ0
+Density of the ﬂuid
+σ
+Porous parameter
+φ
+Concentration of the ﬂuid
+123
+Combined Effect of Variable Viscosity and Variable Thermal. . .
+661
+1 Introduction
+Natural convection in differently heated cavities ﬁlled with a ﬂuid-saturated porous media
+plays an important role in many practical applications. It has attracted the attention of engi-
+neers in recent past owing to its relevance in high-performance insulations for cryogenic
+containers, petroleum reservoirs, sensible heat storage beds, coal combustors, risk assess-
+ment of radionuclide migration from depositories of nuclear waste, thermal performance of
+solar collectors, cooling of electronic systems, nuclear waste repositories, and ground water
+hydrology are just some examples of realistic applications where a porous cavity is basi-
+cally differentially heated. Convective processes of ﬂuid ﬂow and associated heat transfer in
+porous cavities have been studied extensively for the past several decades. Free convective
+heat transfer in porous medium has been studied widely in the literature. Nield and Bejan
+(2013) gave an excellent summary of the subject.
+The growing need for chemical reactions in chemical and hydrometallurgical industries
+requires the study of heat and mass transfer in the presence of chemical reaction. There are
+many transport processes that are governed by the simultaneous action of buoyancy forces
+due to both thermal and mass diffusion in the presence of chemical reaction effect. These
+processes are observed in nuclear reactor safety and combustion systems, solar collectors as
+well as chemical and metallurgical engineering. Their other applications include solidiﬁca-
+tion of binary alloys and crystal growth dispersion of dissolved materials or particulate water
+in ﬂows, drying and dehydration operations in chemical and food processing plants, evapora-
+tion at the surface of a water body, distribution of temperature and moisture over agricultural
+ﬁelds and groves of fruit trees, damage of crops due to freezing, energy transfer in a wet cool-
+ing tower and ﬂow in a desert cooler, heat and mass transfer occur simultaneously. Chemical
+reaction can be modeled as either homogeneous or heterogeneous processes. This depends
+on whether they occur at an interface or a single-phase volume reaction. A homogeneous
+reaction is one that occurs uniformly throughout a given phase. The species generation in a
+homogeneous reaction is the same as the internal source of heat generation. On the other hand,
+heterogeneous reaction takes place in a restricted area or within the boundary of a phase.
+The order of the chemical reaction depends on several factors. One of the simplest chemical
+reactions is the ﬁrst-order reaction in which the rate of reaction is directly proportional to the
+species concentration. In many chemical engineering processes, a chemical reaction between
+a foreign mass and the ﬂuid does occur. These processes takes place in numerous industrial
+applications, such as the polymer production, the manufacturing of ceramics or glass ware,
+the food processing. The study of heat and mass transfer with chemical reaction is of great
+practical importance to engineers and scientists because of its almost universal occurrence
+in many branches of science and engineering. Muthucumaraswamy and Ganeshan (2000,
+2001) have studied the impulsive motion of a vertical plate with heat ﬂux/mass ﬂux/suction
+and diffusion of chemically reactive species. Seddeek (2005) have studied the ﬁnite ele-
+ment method for the effect of chemical reaction, variable viscosity, thermophoresis and heat
+generation/absorption on a boundary layer hydromagnetic ﬂow with heat and mass transfer
+over a heat surface. Kandasamy et al. (2005a, 2005b) have examined the effects of chemical
+reaction, heat and mass transfer with or without MHD ﬂow with heat source/suction.
+Most of the existing analytical studies for this problem are based on the constant physical
+properties of the ambient ﬂuid. More accurate prediction for the ﬂow and heat transfer can
+be achieved by taking into account variation of these properties with temperature (Herwig
+and Wicken 1986), especially for ﬂuid viscosity and thermal conductivity. To accurately pre-
+dict the ﬂow and heat transfer rates, it is necessary to take into account the effects of these
+variations. For lubricating ﬂuids, heat generated by internal friction and the corresponding
+123
+662
+J. C. Umavathi
+rise in the temperature affects the physical properties of the ﬂuid and are no longer assumed
+to be constant. The increase in temperature leads to increase in the transport phenomena by
+reducing the physical properties across the thermal boundary layer and so the heat transfer at
+the wall is also affected. Therefore to predict the ﬂow and heat transfer rates, it is necessary
+to take into account the variable ﬂuid properties. Klemp et al. (1990) studied the effect of
+temperature-dependent viscosity on the entrance ﬂow in a channel in the hydrodynamic case.
+The effects of variable viscosity on hydromagnetic ﬂow and heat transfer have been studied by
+Seddeek (2002). Natural convection ﬂow of a viscous Newtonian ﬂuid having temperature-
+dependent viscosity and thermal conductivity over an isothermal vertical wavy cone was
+studied by Hossain and Munir (2001a) and Hossain et al. (2001b) neglecting viscous dissi-
+pation effects. Attia (2008) considered unsteady hydromagnetic Couette ﬂow of dusty ﬂuid
+with temperature dependent viscosity and thermal conductivity under exponentially decay-
+ing pressure gradient and solved the governing equations numerically using ﬁnite difference
+method. Recently, Kalidas (2012) investigated the inﬂuence of thermophoresis and chemical
+reaction on MHD micropolar ﬂuid ﬂow with variable ﬂuid properties. Barletta (1997) and
+Zanchini (1997) have pointed out that relevant effects of viscous dissipation in the fully devel-
+oped laminar forced convection in tubes. Thus, an analysis of the effects of viscous and Darcy
+dissipation in the fully developed mixed convection in vertical duct appears as interesting.
+The aim of the present paper is to study the velocity, temperature and concentration distrib-
+ution within a vertical channel with variable properties. The combined effect of viscosity and
+thermal conductivity on temperature is analyzed. The effects of various governing parameters
+on the ﬂow and concentration ﬁelds are explored.
+2 Mathematical Formulation
+Consider a steady laminar, fully developed ﬂow of an incompressible, viscous, permeable
+ﬂuid between two parallel plates. The distance between the plates is 2b, and the origin of
+coordinate axis is located in the mid-plane of the channel. The two plates are kept at two
+constant temperatures T1 for the left plate and T2 for the right plate. The channel is assumed
+to occupy the region of space−b ≤Y ≤b. A ﬂuid rises in the channel driven by buoyancy
+forces. The no-slip boundary condition is imposed on the parallel plates for the velocity, and
+since the plates are inﬁnite in the X-direction, the physical variables are invariant in these
+directions and the problem is essentially one dimensional with velocity component U (Y)
+along the X axis.
+The physical properties characterizing the ﬂuid except density, viscosity and thermal
+conductivity are assumed to be constant. As customary, the Boussinesq approximation and
+the equation of state
+ρ = ρ0 [1 −βT (T −T0) −βC(C −C0)] .
+(1)
+will be adopted. The ﬂow and heat transfer of viscous, permeable ﬂuid is examined consid-
+ering viscosity and thermal conductivity dependent temperature.
+The momentum equations governing the motion of an incompressible permeable ﬂuid
+in the presence of viscous and Darcy dissipations with the variable viscosity and variable
+thermal conductivity are given by
+d
+dY
+
+μdU
+dY
+
+−μU
+κ
++ ρ0gβT (T −T0) + ρ0gβC (C −C0) = 0
+(2)
+123
+Combined Effect of Variable Viscosity and Variable Thermal. . .
+663
+d
+dY
+
+K dT
+dY
+
++ μ
+dU
+dY
+2
++ μ
+κ U 2 = 0
+(3)
+D d2C
+dY 2 −γ C = 0
+(4)
+where U is the velocity of the ﬂuid, T the temperature of the ﬂuid, D is the diffusion
+coefﬁcient, C is the concentration of the ﬂuid, ρ0 the static density, βT the coefﬁcient of
+thermal expansion, βC the concentration expansion coefﬁcient, κ the permeability parameter,
+g the acceleration due to gravity, μ the viscosity and K the thermal conductivity of the ﬂuid.
+The boundary conditions on the velocity and temperature ﬁelds are given as
+U = 0 at Y = ±b
+(5)
+T = T1 at Y = −b, T = T2 at Y = b
+(6)
+C = Cw at Y = −b, C = C0 at Y = b
+(7)
+The ﬂuid viscosity μ is assumed to vary with temperature as (Saravanan and Kandaswamy
+2004; Attia 2006)
+μ = μ0e−a(T −T0)
+(8)
+where the subscript 0 denotes the reference state and a an empirical constant.
+In Eq. (8), the viscosity μ is assumed to depend on temperature exponentially. The para-
+meter a may take positive values for liquids such as water, benzene or crude oil. In some
+gases like air, helium or methane a may be negative, i.e., the coefﬁcient viscosity increases
+with temperature (Sutton and Sherman 1965; Schlichting 1968). This type of model can ﬁnd
+applications in many processes where preheating of the fuel is used as a means to enhance heat
+transfer effects. In addition, for many ﬂuids such as lubricants, polymers, and coal slurries
+where viscous dissipation is substantial, an appropriate constitutive relation where viscosity
+is a function of temperature should be used.
+The thermal conductivity of the ﬂuid is assumed as (Attia 2006)
+K = K0 (1 + b1 (T −T0))
+(9)
+The thermal conductivity of the ﬂuid is assumed to vary with temperature as can be seen in
+Eq. (9) where the parameter b may be positive for some ﬂuids such as air or water vapor or
+negative for others like liquid water or benzene (Schlichting 1968; White 1991). The thermal
+conductivity changes approximately linearly with temperature in the range from 0 to 400◦F.
+Equations (2–4) determine the velocity, temperature, and concentration distribution, and
+they can be written in a dimensionless form by means of the following dimensionless para-
+meters
+u∗= U
+¯u ;
+y∗= Y
+b ;
+m = T1 −T2
+T
+;
+φ = c −c0
+c ;
+θ = T −T0
+T
+;
+GrT = gβTb3T
+υ2
+;
+GRT = GrT
+Re ;
+GrC = gβCb3C
+υ2
+;
+GRC = GrC
+Re ;
+Re = ¯ub
+υ ;
+σ = b2
+κ ;
+Br = μ0 ¯u2
+K0T
+(10)
+In terms of the non-dimensional variables as in Eq. (10), Eqs. (2–4) take the form
+d2u
+dy2 −bv
+dθ
+dy
+du
+dy −σ 2u + (1 + bvθ) (GRT θ + GRCφ) = 0
+(11)
+123
+664
+J. C. Umavathi
+d2θ
+dy2 −bk
+
+dθ
+dy
+2
++ Br
+
+du
+dy
+2
++ (bk −bv) Brθ
+
+du
+dy
+2
++ σ 2u2
+
+−bkbvBrθ2
+
+du
+dy
+2
++ σ 2u2
+
++ Brσ 2u2 = 0
+(12)
+d2φ
+dy2 −αφ = 0
+(13)
+where bv = aT is the variable viscosity parameter, bk = b1T is the variable conductivity
+parameter, m = T1−T2
+T
+the wall temperature ratio, σ is the porous parameter and Br is the
+Brinkman number. The non-dimensional form of boundary conditions is
+u = 0 at y = ±1
+(14)
+θ = 1 + m at y = −1, θ = 1 at y = 1
+(15)
+φ = 1 at y = −1,
+φ = 0 at y = 1
+(16)
+Equations (11–13) show that the dimensionless velocity, temperature, and concentration
+ﬁelds depend on the parameters: the viscosity parameter bv, the conductivity parameter bk,
+the porous parameter σ, the Brinkman number Br, chemical reaction parameter α and the
+wall temperature ratio m.
+3 Solutions
+The solution of Eq. (13) can be obtained directly by integrating Eq. (13), and the solution is
+φ = c1e−√αy + c2e
+√αy
+(17)
+where c1 and c2 are integrating constants and can be evaluated using boundary conditions as
+deﬁned in Eq. (16).
+Equations (11) and (12) are coupled nonlinear equations, and it is difﬁcult in general
+to ﬁnd analytical solutions. However approximate analytical solutions can be found using
+regular perturbation method. We shall perform a perturbation analysis for the nonlinear Eqs.
+(11) and (12) considering
+u = u0 + Bru1 and θ = θ0 + Brθ1
+(18)
+Substituting (18) into Eqs. (11) and (12) and equating terms with the same powers of Br, we
+obtain the following sequence of boundary value problems for u0, θ0, u1 and θ1
+Zeroth-Order equations
+d2u0
+dy2 −bv
+dθ0
+dy
+du0
+dy −σ 2u0 + (1 + bvθ0) GRT θ0 + GRC (1 + bvθ0) φ = 0
+(19)
+d2θ0
+dy2 −bk
+dθ0
+dy
+2
+= 0
+(20)
+First-order equations
+d2u1
+dy2 −bv
+du0
+dy
+dθ1
+dy −bv
+du1
+dy
+dθ0
+dy −σ 2u1 + GRT bvθ0θ1
++ (1 + bvθ0) GRT θ1 + bvθ1GRCφ = 0
+(21)
+123
+Combined Effect of Variable Viscosity and Variable Thermal. . .
+665
+d2θ1
+dy2 −2bk
+dθ0
+dy
+dθ1
+dy +
+du0
+dy
+2
++ (bk −bv) θ0
+du0
+dy
+2
+−bvbkθ2
+0
+du0
+dy
+2
++σ 2u0 + σ 2 (bk −bv) θ0u2
+0 −σ 2bvbkθ2
+0 u2
+0 = 0
+(22)
+The Eqs. (19–22) are still nonlinear equations and hence closed form solutions cannot be
+found. Hence we apply once again the perturbation method using variable conductivity para-
+meter as the perturbation parameter only for the zeroth-order Eqs. (19) and (20) as follows
+u0 = u00 + bku01;
+θ0 = θ00 + bkθ01
+(23)
+Substituting (23) into Eqs. (19) and (20) and equating terms with the same powers of bk, we
+obtain the following sequence of boundary values problems for u00, θ00, u01 and θ01
+Zeroth-order equations
+d2θ00
+dy2
+= 0
+(24)
+d2u00
+dy2
+−bv
+dθ00
+dy
+du00
+dy
+−σ 2u00 + (1 + bvθ00) GRT θ00 + GRC (1 + bvθ00) φ = 0
+(25)
+First-order equations
+d2θ01
+dy2 −
+dθ00
+dy
+2
+= 0
+(26)
+d2u01
+dy2
+−bv
+dθ00
+dy
+du01
+dy
+−bv
+dθ01
+dy
+du00
+dy
+−σ 2u01 + bvθ00θ01GRT
++ (1 + bvθ00) GRT θ01 + GRCθ01φ = 0
+(27)
+Integrating Eqs. (24), (25) and (26) yield
+θ00 = c3y + c4
+u00 =c7er1y + c8er2y + p1ye−√αy+ p2ye
+√αy + p3e−√αy + p4e
+√αy + p5y2 + p6y + p7
+θ01 = l1y2 + c5y + c6
+where c3, c4, c5, c6, c7 and c8 are integrating constants which can be evaluated using bound-
+ary conditions (14) and (15) after substituting (18) and (23). The solution of Eq. (27) is not
+found as it is very tedious.
+3.1 Numerical Solutions
+Theanalyticalsolutionsobtainedintheabovesectionarevalidforsmallvaluesofperturbation
+parameters. Further it is seen in the above section that it is not possible to ﬁnd solutions of even
+the ﬁrst order. Hence we resort to solve the governing equations by numerical methods using
+Runge–Kutta shooting method (RKSM). The validity of RKSM is justiﬁed by comparing the
+solutions with the results obtained by the perturbation method, and the values are displayed
+in tables. The perturbation method and RKSM solutions agree very well in the absence of
+perturbation parameter.
+123
+666
+J. C. Umavathi
+3.2 Skin Friction and Nusselt Number
+In addition to the velocity and temperature ﬁelds, the following physical quantities can be
+deﬁned: The dimensionless skin friction at each boundary can be deﬁned as
+τ1 = du
+dy
+
+y=−1
+and
+τ2 = du
+dy
+
+y=1
+(28)
+The dimensionless Nusselt number at each boundary can be deﬁned as follows:
+Nu1 = dθ
+dy
+
+y=−1
+and
+Nu2 = dθ
+dy
+
+y=1
+(29)
+The above equations are solved and the results are tabulated in Table 1 for different
+governing parameters.
+4 Results and Discussion
+In this section, the results obtained for the heat and mass transfer in a vertical channel con-
+taining ﬂuid-saturated porous medium are discussed. The Darcy–Brinkman model is used
+to deﬁne the governing equations. The exponential dependent of the viscosity and linear
+dependence of thermal conductivity on temperature is studied. The variations of these result-
+ing terms with the variable viscosity parameter bv and thermal conductivity parameter bk
+and their relative magnitude have an importance on the velocity, temperature and concen-
+tration ﬁelds. The major parameter such as thermal Grashof number GRT , mass Grashof
+number GRC, Brinkman number Br, the wall temperature ratio m, porous parameter σ and
+ﬁrst-order chemical reaction parameter α on the ﬂow for positive and negative values of vis-
+cosity parameter bv and the conductivity parameter bk is numerically evaluated and depicted
+graphically. The governing equations which are coupled and highly nonlinear are solved
+analytically using regular perturbation method (PM) and numerically using Runge–Kutta
+shooting method (RKSM). The validity of RKSM is justiﬁed by comparing the solutions of
+RKSM with PM.
+The effects of viscosity variation parameter bv on the velocity and temperature ﬁelds are
+seen in Figs. 1 and 2, respectively, ﬁxing the variable thermal conductivity parameter. As
+the viscosity variation parameter bv increases, ﬂow increases and the proﬁles for constant
+viscosity (bv = 0) lie above bv < 0 and below bv > 0 on velocity and temperature ﬁelds.
+The variable viscosity parameter bv on the ﬂow was the similar result observed by Attia
+(2001) on the MHD channel ﬂow of dusty ﬂuids. Keeping the value of variable viscosity
+parameter bv ﬁxed, the effect of variable thermal conductivity parameter bk on the ﬂow is
+shown in Figs. 3 and 4, respectively. It is seen that as the thermal conductivity parameter
+increases, both the velocity and temperature ﬁelds are suppressed. The proﬁles for constant
+thermal conductivity (bk = 0) lie above bk > 0 and below bk < 0. The effect of thermal
+conductivity parameter bk is in contrast to the effect of variable viscosity parameter bv (Figs.
+1, 2). The effect of bk on the ﬂow was the similar result observed by Attia (1999) and Palani
+and Kim (2010).
+TheeffectofthermalGrashofnumber GRT andmassGrashofnumber GRC onthevelocity
+and temperature ﬁelds is displayed in Figs. 5, 6, 7, and 8. As the thermal Grashof number
+GRT and mass Grashof number GRC increase, the velocity and temperature ﬁelds increase.
+Physically an increase in the thermal Grashof number GRT and mass Grashof number GRC
+123
+Combined Effect of Variable Viscosity and Variable Thermal. . .
+667
+-1.0
+-0.5
+0.0
+0.5
+1.0
+0.0
+0.2
+0.4
+0.6
+0.2
+bv=0.5
+0
+- 0.2
+- 0.5
+bk=-0.2,m=1,Br=0.01
+         GRT=1,GRC=1
+α =0.5,σ =2
+u
+y
+Fig. 1 Velocity proﬁles for different values of bv
+-1.0
+-0.5
+0.0
+0.5
+1.0
+1.0
+1.2
+1.4
+1.6
+1.8
+2.0
+-0.05
+0.00
+0.05
+1.50
+1.52
+1.54
+bk=-0.2,m=1,Br=0.01
+         GR
+T=1,GR
+C=1
+α =0.5,σ =2
+bv = - 0.5, - 0.2, 0.0, 0.2, 0.5
+θ
+y
+Fig. 2 Temperature proﬁles for different values of bv
+123
+668
+J. C. Umavathi
+-1.0
+-0.5
+0.0
+0.5
+1.0
+0.0
+0.2
+0.4
+bk = - 0.5, - 0.2, 0.0, 0.2, 0.5
+bv=0.2,m=1,Br=0.01
+        GRT=1,GRC=1
+α =0.5,σ =2
+u
+y
+Fig. 3 Velocity proﬁles for different values of bk
+Fig. 4 Temperature proﬁles for
+different values of bk
+-1.0
+-0.5
+0.0
+0.5
+1.0
+1.0
+1.2
+1.4
+1.6
+1.8
+2.0
+bv=0.2,m=1,Br=0.01
+        GRT=1,GRC=1
+α =0.5,σ =2
+bk = - 0.5, - 0.2, 0.0, 0.2, 0.5
+θ
+y
+implies an increase in buoyancy force which supports the motion. Since the thermal Grashof
+number GRT acts as the driving mechanism of the driving force in the momentum equation,
+the velocity and/or velocity gradientincreases and therefore the effectof dissipation increases,
+which results in the enhancement of temperature ﬁeld. The effects of GRT and GRC on the
+ﬂow were the similar results observed by Shivaiah and Anandrao (2012) for the ﬂow past
+a porous vertical plate for constant properties. The effect of Brinkman number Br on the
+velocity and temperature ﬁeld is shown in Figs. 9 and 10, respectively. It is evident from
+123
+Combined Effect of Variable Viscosity and Variable Thermal. . .
+669
+-1.0
+-0.5
+0.0
+0.5
+1.0
+0
+2
+4
+6
+8
+10
+12
+15
+10
+5
+GR T = 1
+bk=0.2,bv=0.2,m=1
+     Br=0.01,GRC=1
+α =0.5,σ =2
+u
+y
+Fig. 5 Velocity proﬁles for different values of GRr
+-1.0
+-0.5
+0.0
+0.5
+1.0
+1.0
+1.5
+2.0
+2.5
+3.0
+10
+15
+5
+bk=0.2,bv=0.2,m=1
+     Br=0.01,GRC=1
+α =0.5,σ =2
+GRT = 1
+θ
+y
+Fig. 6 Temperature proﬁles for different values of GRr
+these ﬁgures that as the Brinkman number Br increases, the ﬂow is promoted. This is due
+to the fact that an increase in the Brinkman number Br results in the increase in dissipation
+effects which results in the increase in temperature and as a consequence velocity increases
+for the increase in buoyancy force in the momentum equation. The wall temperature ratio m
+123
+670
+J. C. Umavathi
+-1.0
+-0.5
+0.0
+0.5
+1.0
+0.0
+0.5
+1.0
+1.5
+2.0
+2.5
+20
+15
+10
+bk=0.2,bv=0.2,m=1
+      Br=0.01,GRT=1
+α =0.5,σ =2
+5
+GRC = 1
+u
+y
+Fig. 7 Velocity proﬁles for different values of GRc
+-1.0
+-0.5
+0.0
+0.5
+1.0
+1.0
+1.2
+1.4
+1.6
+1.8
+2.0
+bk=0.2,bv=0.2,m=1
+      Br=0.01,GRT=1
+α =0.5,σ =2
+GRC = 1, 5, 10, 15, 20
+θ
+y
+Fig. 8 Temperature proﬁles for different values of GRc
+ﬁxing the values of bv, bk, GRT , GRC, Br, σ and α can be viewed in Figs. 11 and 12. It
+is seen that as the wall temperature ratio m increases, the ﬂow is enhanced. It is interesting
+to note that for negative values of m, there is a ﬂow reversal at the left wall. Since the wall
+temperature boundary conditions are taken as 1 + m at left wall and ﬁxed as 1 at the right
+wall, the temperature proﬁles show the variation at the left wall and remain constant at the
+right wall. The effect of porous parameter σ (inverse of Darcy number) is to suppress the ﬂow
+123
+Combined Effect of Variable Viscosity and Variable Thermal. . .
+671
+-1.0
+-0.5
+0.0
+0.5
+1.0
+0.0
+0.1
+0.2
+Br = 0.1, 0.5, 1, 1.5, 2
+bk= 0.5, bv= - 0.2, m=1
+        GRT=1,GRC=1
+α =0.5,σ =2
+u
+y
+Fig. 9 Velocity proﬁles for different values of Br
+-1.0
+-0.5
+0.0
+0.5
+1.0
+1.0
+1.2
+1.4
+1.6
+1.8
+2.0
+2.2
+Br=0.1,0.5,1,1.5,2
+bk=0.5,bv=-0.2,m=1
+        GRT=1,GRC=1
+α =0.5,σ =2
+θ
+y
+Fig. 10 Temperature proﬁles for different values of Br
+as seen in Figs. 13 and 14. This is also an expected result because physically, large values of
+porous parameter σ correspond to densely packed porous medium and hence ﬂow rate will
+be reduced. The effect of porous parameter σ on the ﬂow was the similar result observed by
+Umavathi and Veershetty (2012) for constant properties. The effects of ﬁrst-order chemical
+reaction parameter α on the velocity, temperature, and concentration ﬁelds are depicted
+in Figs. 15, 16, and 17. It is evident from these ﬁgures that the velocity, temperature, and
+123
+672
+J. C. Umavathi
+-1.0
+-0.5
+0.0
+0.5
+1.0
+0.0
+0.1
+0.2
+0.3
+0.4
+0.5
+0.6
+2
+1
+0
+- 1
+m = - 2
+bk=0.2,bv=0.2,Br=0.01
+            GRT=1,GRC=1
+α =0.5,σ =2
+u
+y
+Fig. 11 Velocity proﬁles for different values of m
+-1.0
+-0.5
+0.0
+0.5
+1.0
+-1.0
+-0.5
+0.0
+0.5
+1.0
+1.5
+2.0
+2.5
+3.0
+2
+1
+0
+bv=0.2,bk=0.2,Br=0.01
+            GRT=1,GRC=1
+α =0.5,σ =2
+-1
+m = - 2
+θ
+y
+Fig. 12 Temperature proﬁles for different values of m
+concentration ﬁelds are reduced with an increase in α. Physically an increase in α leads to the
+increase in the number of solute molecules undergoing chemical reaction which decreases the
+ﬂuid ﬁeld. This is the similar result observed by Damesh and Shannak (2010) for viscoelastic
+ﬂuid, and Krishnendu (2012) for viscous ﬂuid with constant properties. The effect of variable
+123
+Combined Effect of Variable Viscosity and Variable Thermal. . .
+673
+Fig. 13 Velocity proﬁles for
+different values of σ
+-1.0
+-0.5
+0.0
+0.5
+1.0
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+σ = 0.5
+1
+4
+2
+bk=0.2,bv=0.2,m=1
+     Br=0.01,GRT=1
+      GRC=1, α =0.5
+u
+y
+-1.0
+-0.5
+0.0
+0.5
+1.0
+1.0
+1.2
+1.4
+1.6
+1.8
+2.0
+-0.10
+-0.05
+0.00
+0.05
+0.10
+1.44
+1.46
+1.48
+1.50
+1.52
+bk=0.2,bv=0.2,m=1
+     Br=0.01,GRT=1
+     GRC=1, α =0.5
+σ = 0.5, 1, 2, 4
+θ
+y
+Fig. 14 Temperature proﬁles for different values of σ
+viscosity parameter bv, variable thermal conductivity parameter bk, thermal Grashof number
+GRT , mass Grashof number GRC, Brinkman number Br, the wall temperature ratio m,
+and porous parameter σ on the concentration ﬁelds is invariant, because the concentration
+equation does not include these parameters.
+123
+674
+J. C. Umavathi
+-1.0
+-0.5
+0.0
+0.5
+1.0
+0.0
+0.2
+0.4
+α = 0, 0.5, 1, 1.5
+bk=0.2,bv=0.2,m=1
+      Br=0.01,GRT=1
+           GRC=1,σ =2
+u
+y
+Fig. 15 Velocity proﬁles for different values of α
+-1.0
+-0.5
+0.0
+0.5
+1.0
+1.0
+1.2
+1.4
+1.6
+1.8
+2.0
+-0.05
+0.00
+0.05
+1.44
+1.46
+1.48
+1.50
+bk=0.2,bv=0.2,m=1
+      Br=0.01,GRT=1
+           GRC=1, σ =2
+α = 0, 0.5, 1, 1.5
+θ
+y
+Fig. 16 Temperature proﬁles for different values of α
+The effect of variable viscosity, variable thermal conductivity, thermal Grashof number
+GRT , mass Grashof number GRC, Brinkman number Br, the wall temperature ratio m,
+porous parameterσ, and ﬁrst-order chemical reaction parameterα on skin friction and Nusselt
+number is shown in Table 1. Fixing bv = 0.2, increasing the values of bk decreases the skin
+friction and Nusselt number at the left wall and increases at the right wall. Fixing bk and
+123
+Combined Effect of Variable Viscosity and Variable Thermal. . .
+675
+-1.0
+-0.5
+0.0
+0.5
+1.0
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+φ
+bk=0.2,bv=0.2,m=1
+      Br=0.01,GRT=1
+           GRC=1,σ =2
+α = 0, 0.5, 1, 1.5
+y
+Fig. 17 Connection proﬁles for different α
+increasing the values of bv show that skin friction and Nusselt number increase at the left
+wall and decrease at the right wall. The thermal Grashof number GRT , mass Grashof number
+GRC, and Brinkman number Br increase the skin friction and Nusselt number at the left
+wall and decrease at the right wall. For increase in the wall temperature ratio m, skin friction
+increases at the left wall and decreases at the right wall whereas the Nusselt number decreases
+at both the walls. The porous parameter σ and ﬁrst-order chemical reaction parameter α
+decrease the skin friction and Nusselt number at the left wall and increase at the right wall.
+The analytical solutions obtained by regular perturbation methods are valid only for small
+values of perturbation parameter. To overcome this restriction, the governing equations are
+solved using Runge–Kutta shooting method. The validity of Runge–Kutta shooting method is
+justiﬁed by comparing the results obtained by perturbation method and Runge–Kutta shooting
+method in the absence of Brinkman number Br and is displayed in Table 2. It is viewed that
+the analytical and numerical solutions are exact for bk = 0. The error increases as the second
+perturbation parameter bk increases.
+5 Conclusion
+The problem of free convective ﬂow, heat and mass transfer in a vertical channel ﬁlled with
+porous medium was analyzed for the variation of viscosity and thermal conductivity on the
+temperature. The analytical solutions were found by perturbation parameter method valid for
+small values of perturbation parameter, and numerical solutions were found by Runge–Kutta
+shooting method valid for any values of governing parameters. The Runge–Kutta shooting
+method and perturbation method show good agreement in the absence of Brinkman number
+and conductivity variation parameter. The following results were drawn.
+1. Increase in the variable viscosity parameter enhances the ﬂow and heat transfer, whereas
+increase in the variable thermal conductivity parameter suppresses the ﬂow and heat
+transfer.
+2. The thermal Grashof number, mass Grashof number, wall temperature ratio, and
+Brinkman number enhance the ﬂow.
+123
+676
+J. C. Umavathi
+Table 1 Computations showing the effect of parameter variations on skin friction and Nusselt number
+du
+dy
+y=−1
+du
+dy
+y=1
+dθ
+dy
+y=−1
+dθ
+dy
+y=1
+bk
+bv = 0.2, m = 1, Br = 0.01, GRT = 1, GRC = 1, σ = 2, α = 0.5
+−0.5
+1.68933436
+−0.84123343
+−0.39278627
+−0.65049652
+−0.2
+1.67710432
+−0.82868984
+−0.44896098
+−0.55742372
+0
+1.66842914
+−0.82067749
+−0.49329682
+−0.50492406
+0.2
+1.65936388
+−0.81298052
+−0.54414787
+−0.45887457
+0.5
+1.64510430
+−0.80207567
+−0.63493222
+−0.40004395
+bv
+bk = −0.2, m = 1, Br = 0.01, GRT = 1, GRC = 1, σ = 2, α = 0.5
+−0.5
+0.09882489
+−0.25552172
+−0.45296576
+−0.55387021
+−0.2
+0.75397621
+−0.51847213
+−0.45102697
+−0.55556520
+0
+1.20848763
+−0.67921321
+−0.44955719
+−0.55676898
+0.2
+1.67710432
+−0.82868984
+−0.44896098
+−0.55742372
+0.5
+2.40606293
+−1.03245921
+−0.45168486
+−0.55631542
+GRT
+bk = 0.2, bv = 0.2, m = 1, Br = 0.01, GRC = 1, σ = 2, α = 0.5
+1
+1.65936388
+−0.81298052
+−0.54414787
+−0.45887457
+5
+6.49732931
+−3.74482867
+−0.39454005
+−0.55960546
+10
+13.42845003
+−8.11877853
+0.17969868
+−0.96303850
+15
+26.26123072
+−17.46181959
+2.62231362
+−2.86606223
+GRC
+bk = 0.2, bv = 0.2, m = 1, Br = 0.01, GRT = 1, σ = 2, α = 0.5
+1
+1.65936388
+−0.81298052
+−0.54414787
+−0.45887457
+5
+3.57688102
+−1.22604264
+−0.51614086
+−0.47214423
+10
+5.97740107
+−1.74499541
+−0.45447735
+−0.50001365
+15
+8.38202929
+−2.26703069
+−0.36311997
+−0.54047831
+20
+10.79077891
+−2.79229920
+−0.24208431
+−0.59355329
+Br
+bk = 0.5, bv = −0.2, m = 1, GRT = 1, GRC = 1, σ = 2, α = 0.5
+0.1
+0.74731223
+−0.50850163
+−0.57624723
+−0.42922657
+0.5
+0.75951284
+−0.52223702
+−0.27437911
+−0.58034492
+1
+0.77534917
+−0.54071559
+0.12855478
+−0.78766072
+1.5
+0.79111059
+−0.56013806
+0.55345452
+−1.01351819
+2
+0.80556956
+−0.57944683
+0.98575804
+−1.25147476
+m
+bk = 0.2, bv = 0.2, Br = 0.01, GRT = 1, GRC = 1, σ = 2, α = 0.5
+−2
+0.04580486
+−0.38034388
+0.82429545
+1.22920888
+−1
+0.45354382
+−0.53412063
+0.45429147
+0.55211963
+0
+0.99227404
+−0.67911247
+0.00407286
+−0.00324447
+1
+1.65936388
+−0.81298052
+−0.54414787
+−0.45887457
+2
+2.45304731
+−0.93456176
+−1.21316995
+−0.83262044
+σ
+bk = 0.2, bv = 0.2, m = 1, Br = 0.01, GRT = 1, GRC = 1, α = 0.5
+0.5
+2.89619323
+−1.78148048
+−0.53299537
+−0.46719182
+1
+2.45131944
+−1.41671329
+−0.53704813
+−0.46403654
+2
+1.65936388
+−0.81298052
+−0.54414787
+−0.45887457
+4
+0.93718307
+−0.36578303
+−0.54988646
+−0.45513947
+α
+bk = 0.2, bv = 0.2, m = 1, Br = 0.01, GRT = 1, GRC = 1, σ = 2
+0
+1.70219637
+−0.84150278
+−0.54337226
+−0.45940143
+0.5
+1.65936388
+−0.81298052
+−0.54414787
+−0.45887457
+1
+1.62743587
+−0.79332917
+−0.54468928
+−0.45851694
+1.5
+1.60241888
+−0.77910997
+−0.54509017
+−0.45825924
+123
+Combined Effect of Variable Viscosity and Variable Thermal. . .
+677
+Table 2 Comparison of velocity and temperature for various values of bv = 0.2, m = 1, Br = 0, GRT =
+1, GRC = 1, α = 0.5, σ = 2 with Runge–Kutta shooting method
+y
+Velocity
+Temperature
+bk = 0
+bk = 0
+bk = 0.3
+bk = 0.6
+Analytical
+Numerical
+Analytical
+Numerical
+Analytical
+Numerical
+Analytical
+Numerical
+1.0
+0.000000
+0.000000
+1.000000
+1.000000
+1.000000
+1.000000
+1.000000
+1.000000
+0.6
+0.255938
+0.255938
+1.200000
+1.200000
+1.176000
+1.177427
+1.152000
+1.157619
+0.2
+0.410465
+0.410466
+1.400000
+1.400000
+1.364000
+1.364832
+1.328000
+1.331717
+−0.2
+0.477004
+0.477004
+1.600000
+1.600000
+1.564000
+1.563404
+1.528000
+1.526146
+−0.6
+0.398282
+0.398282
+1.800000
+1.800000
+1.776000
+1.774559
+1.752000
+1.746289
+−1
+0.000000
+0.000000
+2.000000
+2.000000
+2.000000
+2.000000
+2.000000
+2.000000
+3. The increase in porous parameter and chemical reaction parameter suppresses the
+ﬂow. The variable viscosity parameter, variable thermal conductivity parameter, ther-
+mal Grashof number, mass Grashof number, wall temperature ratio, Brinkman number,
+and porous parameter were invariant on concentration ﬁeld.
+4. The solutions obtained by Runge–Kutta shooting method and perturbation method are
+exact in the absence of Brinkman number and variable conductivity parameter, and the
+error increases as the variable conductivity parameter increases.
+5. The obtained results agreed very well with Attia (2006) for variable properties and with
+Umavathi (1996) for constant properties.
+References
+Attia, H.A.: Transient MHD ﬂow and heat transfer between two parallel plates with temperature dependent
+viscosity. Mech. Res. Commun. 26, 115–121 (1999)
+Attia, H.A.: Inﬂuence of temperature dependent viscosity on the MHD-channel ﬂow of dusty ﬂuid with heat
+transfer. Acta Mech. 151, 89–101 (2001)
+Attia, H.A.: Unsteady hydromagnetic channel ﬂow of dusty ﬂuid with temperature dependent viscosity and
+thermal conductivity. Heat Mass Transf. 42, 779–787 (2006)
+Attia, H.A.: Unsteady hydromagnetic Couette ﬂow of dusty ﬂuid with temperature dependent viscosity and
+thermal conductivity under exponentially decaying pressure gradient. Commun. Nonlinear Sci. Numer.
+Simul. 13, 1077–1088 (2008)
+Barletta, A.: Fully developed laminar forced convection in circular ducts for power-law ﬂuids with viscous
+dissipation. Int. J. Heat Mass Transf. 40, 15–26 (1997)
+Damesh, R.A., Shannak, B.A.: Viscoelastic ﬂuid ﬂow past an inﬁnite vertical porous plate in the presence of
+ﬁrst order chemical reaction. Appl. Math. Mech 31(8), 955–962 (2010)
+Herwig, H., Wicken, G.: The effect of variable properties on laminar boundary layer ﬂow. Warme-und Stof-
+fubertrag. 20, 47–57 (1986)
+Hossain,M.A.,Munir,M.S.:Naturalconvectionﬂowofaviscousﬂuidaboutatruncatedconewithtemperature-
+dependent viscosity and thermal conductivity. Int. J. Numer. Methods Heat Fluid Flow 11(6), 494–510
+(2001a)
+Hossain, M.A., Munir, M.S., Pop, I.: Natural convection with variable viscosity and thermal conductivity from
+a vertical wavy cone. Int. J. Therm. Sci. 40, 437–443 (2001b)
+Kalidas, D.: Inﬂuence of thermophoresis and chemical reaction on MHD micropolar ﬂuid ﬂow with variable
+ﬂuid properties. Int. J. Heat Mass Transf. 55, 7166–7174 (2012)
+Kandasamy, R., Perisamy, K., Sivagnana Prabhu, K.K.: Effects of chemical reaction, heat and mass transfer
+along a wedge with heat source and concentration in the presence of suction or injection. Int. J. Heat
+Mass Transf. 48, 1388–1394 (2005a)
+123
+678
+J. C. Umavathi
+Kandasamy, R., Perisamy, K., Sivagnana Prabhu, K.K.: Chemical reaction, heat and mass transfer on MHD
+ﬂow over a vertical stretching surface with heat source and thermal stratiﬁcation effects. Int. J. Heat Mass
+Transf. 48, 4557–4561 (2005b)
+Klemp, K., Herwig, H., Selmann, M.: Entrance ﬂow in channel with temperature dependent viscosity including
+viscousdissipation effects.In:Proceedingsof theThird International Congressof Fluid Mechanics,Cairo,
+Egypt 3, 1257–1266 (1990)
+Krishnendu, B.: Slip effects on boundary layer ﬂow and mass transfer with chemical reaction over a permeable
+ﬂat plate in porous medium. Front. Heat Mass Transf. 3, 1–6 (2012)
+Muthucumaraswamy, R., Ganesan, P.: On impulsive motion of a vertical plate with heat ﬂux and diffusion of
+chemically reactive species. Forch Ing. 66, 17–23 (2000)
+Muthucumaraswamy, R., Ganesan, P.: First order chemical reaction on ﬂow past an impulsively started vertical
+plate with uniform heat and mass ﬂux. Acta Mech. 147, 45–57 (2001)
+Nield, D.A., Bejan, A.: Convection in Porous Media, 4th edn. Springer, New York (2013)
+Palani, G., Kim, K.Y.: Numerical study on vertical plate with variable viscosity and thermal conductivity.
+Arch. Appl. Mech. 80, 711–725 (2010)
+Saravanan, S., Kandaswamy, P.: Hydromagnetic stability of convective ﬂow of variable viscosity ﬂuids gen-
+erated by internal heat sources. Z. Angew. Math. Phys. 55, 451–467 (2004)
+Schlichting, H.: Boundary Layer Theory. McGraw-Hill, New York (1968)
+Seddeek, M.A.: Effects of radiation and variable viscosity on a MHD free convection ﬂow past a semi-inﬁnite
+ﬂat plate with an aligned magnetic ﬁeld in the case of unsteady ﬂow. Int. J. Heat Mass Transf. 45, 931–935
+(2002)
+Seddeek, M.A.: Finite element method for the effects of chemical reaction, variable viscosity, thermophoresis
+and heat generation/absorption on a boundary layer hydromagnetic ﬂow with heat and mass transfer over
+a heat surface. Acta Mech. 177, 1–18 (2005)
+Shivaiah, S., Anandrao, J.: Chemical reaction effect on unsteady MHD free convection ﬂow past a vertical
+porous plate in the presence of suction or injection. Appl. Mech. 39(2), 185–208 (2012)
+Sutton, G.W., Sherman, A.: Engineering Magnetohydrodynamics. McGraw-Hill, New York (1965)
+Umavathi, J.C.: A note on magneto convection in a vertical enclosure. Int. J. Nonlinear Mech. 31, 371–376
+(1996)
+Umavathi, J.C., Veershetty, S.: Mixed convection of a permeable ﬂuid in a vertical channel with boundary
+conditions of third kind. Heat Transf. Asian Res. 41(6), 516–535 (2012)
+White, M.F.: Viscous Fluid Flow. McGraw-Hill, New York (1991)
+Zanchini, E.: Effect of viscous dissipation on the asymptotic behavior of laminar forced convection in circular
+tubes. Int. J. Heat Mass Transf. 40, 169–178 (1997)
+123
+View publication stats
